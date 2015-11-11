@@ -19,3 +19,5 @@ unmounted: /Volumes/Transcend
 mounted: /Volumes/Transcend
 unmounted: /Volumes/Transcend
 ```
+
+Works with OS X.
