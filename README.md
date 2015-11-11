@@ -3,6 +3,16 @@ Simple command line app that print to stdout when usb drive mounted and unmounte
 
 You can find executable in build directory.
 
+Use with node.js:
+```
+var spawn = require('child_process').spawn,
+    usb_notifier = spawn('usb-mount-notifier');
+
+usb_notifier.stdout.on('data', function (data) {
+  console.log('stdout: ' + data);
+});
+```
+
 example of output:
 ```
 unmounted: /Volumes/Transcend
