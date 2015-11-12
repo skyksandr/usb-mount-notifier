@@ -21,3 +21,6 @@ unmounted: /Volumes/Transcend
 ```
 
 Works with OS X.
+
+# License
+usb-mount-notifier is released under the [MIT License](http://opensource.org/licenses/MIT)
