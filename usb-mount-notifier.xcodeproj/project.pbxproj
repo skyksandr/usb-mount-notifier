@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1248232B1BF3BA46005BA68B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1248232A1BF3BA46005BA68B /* main.m */; };
+		124823351BF3CAA4005BA68B /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124823341BF3CAA4005BA68B /* AppKit.framework */; };
+		124823371BF3DE2E005BA68B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124823361BF3DE2E005BA68B /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		124823271BF3BA46005BA68B /* usb-mount-notifier */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "usb-mount-notifier"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1248232A1BF3BA46005BA68B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		124823341BF3CAA4005BA68B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		124823361BF3DE2E005BA68B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		12567BF31BF4835D00B8CF7C /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				124823371BF3DE2E005BA68B /* Foundation.framework in Frameworks */,
+				124823351BF3CAA4005BA68B /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +46,9 @@
 		1248231E1BF3BA46005BA68B = {
 			isa = PBXGroup;
 			children = (
-				124823291BF3BA46005BA68B /* usb-mount-notifier */,
+				12567BF31BF4835D00B8CF7C /* src */,
+				124823361BF3DE2E005BA68B /* Foundation.framework */,
+				124823341BF3CAA4005BA68B /* AppKit.framework */,
 				124823281BF3BA46005BA68B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,14 +59,6 @@
 				124823271BF3BA46005BA68B /* usb-mount-notifier */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		124823291BF3BA46005BA68B /* usb-mount-notifier */ = {
-			isa = PBXGroup;
-			children = (
-				1248232A1BF3BA46005BA68B /* main.m */,
-			);
-			path = "usb-mount-notifier";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +117,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1248232B1BF3BA46005BA68B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +205,8 @@
 		1248232F1BF3BA46005BA68B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				INSTALL_PATH = "/Users/aleksandrkunin/Documents/1406 - skyderby.ru/usb-mount-notifier/usb-mount-notifier/build";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -214,6 +214,7 @@
 		124823301BF3BA46005BA68B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				INSTALL_PATH = "/Users/aleksandrkunin/Documents/1406 - skyderby.ru/usb-mount-notifier/usb-mount-notifier/build";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -237,6 +238,7 @@
 				124823301BF3BA46005BA68B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
